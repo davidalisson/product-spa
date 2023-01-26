@@ -1,0 +1,57 @@
+{
+  "categorias": [
+    {
+      "nome": "atacado"
+    },
+    {
+      "nome": "varejo"
+    },
+    {
+      "nome": "internacional"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "codigo": "567",
+      "nome": "Álcool em Gel",
+      "categoria": "ATACADO"
+    },
+    {
+      "id": 4,
+      "codigo": "1321",
+      "nome": "Caixa JBL",
+      "categoria": "ATACADO"
+    },
+    {
+      "codigo": "1234",
+      "nome": "Bolsa",
+      "categoria": "INTERNACIONAL",
+      "id": 5
+    },
+    {
+      "codigo": "1234567",
+      "nome": "Lápis",
+      "categoria": "VAREJO",
+      "id": 6
+    },
+    {
+      "codigo": "1222",
+      "nome": "Iphone",
+      "categoria": "INTERNACIONAL",
+      "id": 9
+    },
+    {
+      "codigo": "12345",
+      "nome": "Tv Philips",
+      "categoria": "VAREJO",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "codigo": "12",
+      "nome": "Fone",
+      "categoria": "INTERNACIONAL"
+    }
+  ]
+}

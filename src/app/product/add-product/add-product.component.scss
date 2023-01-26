@@ -1,0 +1,26 @@
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-element {
+  width: 500px;
+}
+a:link {
+  text-decoration: none;
+}
+.add-product-container {
+  padding: 20px;
+  max-width: 500px;
+}
+.button-submit{
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.form-container{
+  display: flex;
+    flex-direction: column;
+}

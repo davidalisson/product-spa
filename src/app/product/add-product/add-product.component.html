@@ -1,0 +1,78 @@
+<div
+  [formGroup]="productFormGroup"
+  class="container add-product-container"
+>
+  <div>
+    <a [routerLink]="['/produtos/lista']">
+      <button
+        mat-flat-button
+        color="primary"
+        aria-label="Adicionar novo produto"
+      >
+        Voltar <mat-icon>arrow_back</mat-icon>
+      </button>
+    </a>
+  </div>
+  <br />
+  <div class="form-container">
+    <mat-form-field>
+      <mat-label>Código</mat-label>
+      <input
+        matInput
+        placeholder="Codigo do produto"
+        formControlName="codigo"
+      />
+
+      <mat-error
+        *ngIf="
+          (form['codigo']?.invalid &&
+            (form['codigo']?.dirty || form['codigo']?.touched)) ||
+          form['codigo']?.hasError('required')
+        "
+      >
+        *Campo
+        <strong>obrigatório.</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome do produto" formControlName="nome" />
+      <mat-error
+        *ngIf="
+          (form['nome']?.invalid &&
+            (form['nome']?.dirty || form['nome']?.touched)) ||
+          form['nome']?.hasError('required')
+        "
+      >
+        *Campo
+        <strong>obrigatório.</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Categoria</mat-label>
+      <mat-select
+        formControlName="categoria"
+        placeholder="Selecione a categoria"
+      >
+        <mat-option>Selecione</mat-option>
+        <mat-option value="ATACADO">Atacado</mat-option>
+        <mat-option value="VAREJO">Varejo</mat-option>
+        <mat-option value="INTERNACIONAL">Internacional</mat-option>
+      </mat-select>
+      <mat-error
+        *ngIf="
+          (form['categoria']?.invalid &&
+            (form['categoria']?.dirty || form['categoria']?.touched)) ||
+          form['categoria']?.hasError('required')
+        "
+      >
+        *Campo
+        <strong>obrigatório.</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <button class="button-submit" mat-raised-button color="primary" (click)="create()">Salvar</button>
+  </div>
+</div>

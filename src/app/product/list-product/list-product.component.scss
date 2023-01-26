@@ -1,0 +1,30 @@
+.tabela {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+i.delete {
+  color: red;
+}
+
+i.edit {
+  color: yellow;
+}
+
+a {
+  cursor: pointer;
+  margin-right: 10px;
+}
+a:link {
+  text-decoration: none;
+}
+.busca{
+  margin-top: 10px;
+}
+.mat-mdc-table {
+  table-layout: fixed !important;
+  white-space: normal;
+}

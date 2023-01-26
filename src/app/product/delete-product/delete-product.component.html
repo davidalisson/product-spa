@@ -1,0 +1,7 @@
+<div class="padding">
+  <h3>Você realmente deseja deletar o produto: {{ data.id }}?</h3>
+  <button color="primary" mat-raised-button (click)="deleteProduct(data.id!)">
+    Sim
+  </button>
+  <button color="danger" mat-raised-button (click)="close()">Não</button>
+</div>
