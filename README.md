@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2 and NodeJS v18.13.0.
 
+Angular Material was used for the component design
+
 ## Development server
 
 Install the JSON server globally with `npm install -g json-server`
