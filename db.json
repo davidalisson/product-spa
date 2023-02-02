@@ -52,6 +52,12 @@
       "codigo": "12",
       "nome": "Fone",
       "categoria": "INTERNACIONAL"
+    },
+    {
+      "codigo": "34555",
+      "nome": "Camisa",
+      "categoria": "ATACADO",
+      "id": 12
     }
   ]
 }

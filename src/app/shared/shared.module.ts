@@ -12,14 +12,9 @@ import {  MatInputModule } from "@angular/material/input";
 import {  MatSelectModule } from "@angular/material/select";
 import {  MatCardModule } from "@angular/material/card";
 import {  MatDialogModule } from "@angular/material/dialog";
-import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
-import { ProductService } from './services/product.service';
-import { MessageService } from './services/message.service';
-import { ToastrService } from 'ngx-toastr';
 @NgModule({
   declarations: [
-    NavComponent,
   ],
   imports: [
     CommonModule,
@@ -50,7 +45,6 @@ import { ToastrService } from 'ngx-toastr';
     MatInputModule,
     MatSelectModule,
     MatCardModule,
-    NavComponent,
     MatDialogModule,
   ],
   providers: []
